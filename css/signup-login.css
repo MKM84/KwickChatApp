@@ -1,0 +1,109 @@
+/* ************************************************* */
+/*  Sign up + Sign in  */
+/* ************************************************* */
+header.header-sign-up {
+    margin-bottom: 2rem;
+    position: fixed;
+    top: 0px;
+}
+
+main.sign-up-main {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sign-up {
+    background-color: var(--gray-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 200px;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 130px;
+    border-radius: 2rem;
+    box-shadow: 0 5px 25px 0 #ccc;
+    min-height: 18rem;
+}
+
+.sign-up .input-con,
+.sign-up .btn-con {
+    border: inherit;
+    margin: 0.5rem;
+    box-shadow: 0 4px 9px 0 #ccc;
+}
+
+.sign-up h4 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.sign-up .input-con {
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    border-bottom: 3px solid var(--gray-1);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 2.3rem;
+}
+
+.sign-up .input-con:focus {
+    outline: none;
+    border-bottom: 3px solid var(--blue-1);
+}
+
+.sign-up .input-con::placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    color: rgb(156, 154, 154);
+}
+
+.sign-up .btn-con {
+    background-color: var(--blue-1);
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+    height: 2.2rem;
+}
+
+.sign-up .btn-con:focus {
+    outline: none;
+    background-color: var(--blue-0);
+}
+
+.sign-up .btn-con:hover {
+    background-color: var(--blue-0);
+}
+
+.sign-up .btn-con:active {
+    background-color: var(--red);
+}
+
+.sub-connection {
+    margin-top: 2rem;
+}
+
+.sub-connection h4 a {
+    color: var(--blue-1);
+}
+
+.sub-connection h4 a:hover {
+    color: var(--blue-0);
+}
+
+.sub-connection h4 a:active {
+    color: var(--red);
+}
+
+.sub-connection h4 a:focus {
+    color: var(--blue-0);
+    outline: none;
+}
+
+#warnning {
+    font-size: 0.8rem;
+}

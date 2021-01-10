@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KWICK Tchat room</title>
+
+    <meta name= "description" content= "Kwick is the best application for instant messaging!" />
+    <meta name="keywords" content="Tchat room, messagerie instantané, messenger... ">
+
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/0/0c/Message_%28Send%29.png" type="image/icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <header>
+        <button class="members-btn" type="button"></button>
+        <h1>Kwick</h1>
+        <button tabindex="0" class="sign-out-btn" type="button"></button>
+    </header>
+
+    <main class="messages-page">
+        <aside>
+            <div class="member-title">
+                <h4>Members</h4>
+            </div>
+            <div>
+                <ul class="members" id="members">
+                    <!-- The members list will appear here  -->
+                </ul>
+            </div>
+        </aside>
+        <section class="kwick-messages">
+            <div class="messages-ctn" id="messages-ctn">
+                <!-- the posted messages will appear here  -->
+            </div>
+
+            <form id="form-msg" class="input-message-ctn">
+                <input class="btn-send" id="message-input" type="text" placeholder="Enter message" autocomplete="off" autofocus="autofocus">
+                <input type="submit" id="send" value="">
+            </form>
+        </section>
+    </main>
+    <div id="session-timer-ctn">
+        <p id="session-timer">Remaining session time <br>
+            <span id="timer"></span>
+        </p>
+    </div>
+    <div id="refresh-to-fetch-ctn">
+        <button tabindex="0" id="refresh-to-fetch">Refresh</button>
+    </div>
+
+    <!-- jQuery CDN  -->
+    <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.js"></script>
+
+    <script src="../js/globale.js"></script>
+    <script src="../js/services/popup.js"></script>
+    <script src="../js/services/format-time.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/services/timer.js"></script>
+
+</body>
+
+</html>

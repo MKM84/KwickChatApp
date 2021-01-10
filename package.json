@@ -1,0 +1,22 @@
+{
+  "name": "kwick_app_majed_khreim",
+  "version": "1.0.0",
+  "description": "Projet d'étude - Messagerie instantané",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MKM84/Projet_1_2021_Kwick.git"
+  },
+  "author": "Majed KHREIM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MKM84/Projet_1_2021_Kwick/issues"
+  },
+  "homepage": "https://github.com/MKM84/Projet_1_2021_Kwick#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

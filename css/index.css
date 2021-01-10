@@ -1,0 +1,308 @@
+/* ************************************************* */
+/* main  */
+/* ************************************************* */
+main.messages-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/* asside - Members */
+aside {
+    width: 16rem;
+    background-color: var(--white);
+    height: 100vh;
+    position: fixed;
+    top: 5rem;
+    display: inline-block;
+    overflow-y: auto;
+    box-shadow: 0 4px 9px 0 #ccc;
+    z-index: 1;
+    margin-bottom: 5rem;
+    overflow-y: scroll;
+    /* ************************************************* */
+    /* Experimental properties / availables only for Firefox for now */
+    scrollbar-color: #7894b4 #f5fafd;
+    scrollbar-width: thin;
+}
+
+aside div {
+    width: 100%;
+}
+
+div.member-title {
+    position: sticky;
+    top: 0rem;
+}
+
+.members {
+    padding-left: 0rem;
+    padding-bottom: 4rem;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+aside h4 {
+    background-color: var(--gray-1);
+    padding: 1rem 0rem 1rem 1rem;
+    box-shadow: 0 1px 3px 0 #ccc;
+}
+
+.members .member {
+    list-style-type: none;
+    padding: 0.7rem 0rem 0.7rem 0rem;
+    border-bottom: solid 1px rgb(233, 233, 233);
+}
+
+.members .current-member {
+    list-style-type: none;
+    padding: 0.7rem 0rem 0.7rem 0rem;
+    border-bottom: solid 1px rgb(233, 233, 233);
+    background-color: var(--blue-3);
+}
+
+.icon-member {
+    display: inline-block;
+    background-color: var(--blue-2);
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-right: 0.3rem;
+    margin-left: 1rem;
+}
+
+/* Section - Messages */
+section.kwick-messages {
+    width: calc(100% - 16rem);
+    height: calc(10vh - 9rem);
+    display: inline-block;
+    padding-left: 16rem;
+}
+
+.messages-ctn {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10rem;
+    padding-top: 6rem;
+    width: 100%;
+}
+
+.message {
+    background-color: var(--white);
+    max-width: 60%;
+    min-width: 272px;
+    padding: 0rem 1rem 0rem 1rem;
+    margin: 1rem 3rem 1rem 3rem;
+    border-radius: 0rem 0.6rem 0.6rem 0.6rem;
+    box-shadow: 0 4px 9px 0 #ccc;
+    width: max-content;
+}
+
+.message>p,
+.own-msg>p {
+    word-break: break-all;
+}
+
+.own-msg {
+    background-color: var(--blue-3);
+    align-self: flex-end;
+    max-width: 60%;
+    min-width: 272px;
+    padding: 0rem 1rem 0rem 1rem;
+    margin: 1rem 3rem 1rem 3rem;
+    border-radius: 0.6rem 0.6rem 0rem 0.6rem;
+    box-shadow: 0 4px 9px 0 #ccc;
+    width: max-content;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.user-name-message p,
+.user-name-message .icon-member {
+    display: inline-block;
+    margin: 0rem;
+}
+
+.date-message p {
+    margin: 0rem;
+}
+
+
+/* Section - input message */
+.input-message-ctn {
+    width: calc(100% - 17rem);
+    padding: 2rem;
+    background-color: var(--gray-2);
+    position: fixed;
+    bottom: 0;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 25px 0 #ccc;
+}
+
+#message-input {
+    width: 80%;
+    height: 2.2rem;
+    margin-right: 3.5rem;
+    border-radius: inherit;
+    border: none;
+    box-shadow: 0 4px 9px 0 #ccc;
+    color: var(--gray-3);
+    padding-left: 1rem;
+    padding-right: 3rem;
+    border-bottom: 3px solid var(--gray-1);
+    position: relative;
+}
+
+#message-input:focus {
+    outline: none;
+    border-bottom: 3px solid var(--blue-1);
+}
+
+#message-input::placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    color: rgb(156, 154, 154);
+}
+
+#send {
+    background-color: #fff;
+    border: none;
+    height: 2rem;
+    width: 2rem;
+    background-image: url('../sources/images/send.svg');
+    background-repeat: no-repeat;
+    background-position: 0rem;
+    cursor: pointer;
+    position: absolute;
+    right: 8%;
+    margin-right: 3rem;
+    top: 39px;
+}
+
+#send:focus {
+    outline: none;
+}
+
+#send:hover {
+    background-image: url('../sources/images/send-hover.svg');
+}
+
+#send:active {
+    background-image: url('../sources/images/send-active.svg');
+}
+
+/* Remaining session timer */
+#session-timer-ctn {
+    position: fixed;
+    top: 5rem;
+    right: 11rem;
+    z-index: 1;
+}
+
+#session-timer {
+    background-color: var(--gray-2);
+    display: inline-block;
+    margin: 0rem 0rem;
+    padding: 0.6rem 1rem 1rem 1rem;
+    height: 2rem;
+    line-height: 1.3rem;
+    border-radius: 0rem 0rem 0rem 1rem;
+    box-shadow: 0 5px 25px 0 #ccc;
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    color: var(--blue-0);
+}
+
+#session-timer span {
+    font-weight: 600;
+}
+
+/* Refresh btn  */
+#refresh-to-fetch-ctn {
+    position: fixed;
+    bottom: 5.5rem;
+    right: 1rem;
+    z-index: 1;
+}
+
+#refresh-to-fetch {
+    background-color: var(--blue-1);
+    height: 60px;
+    width: 60px;
+    border: none;
+    box-shadow: 0 5px 25px 0 #ccc;
+    cursor: pointer;
+    color: var(--white);
+    border-radius: 50%;
+}
+
+#refresh-to-fetch:hover {
+    background-color: var(--blue-0);
+}
+
+#refresh-to-fetch:active {
+    background-color: var(--red);
+}
+
+#refresh-to-fetch:focus {
+    outline: none;
+}
+
+
+
+/* ************************************************* */
+/* Mobile device */
+/* ************************************************* */
+@media (max-width: 767.98px) {
+    aside {
+        left: -257px;
+    }
+
+    section.kwick-messages {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .input-message-ctn {
+        width: 100%;
+    }
+
+    .members-btn {
+        display: block;
+    }
+
+    .toggle-aside {
+        left: 0;
+    }
+
+    .bkgd-img-members {
+        background-image: url('../sources/images/members-f.svg');
+    }
+
+    .own-msg {
+        margin: 1rem 1rem 1rem 3rem;
+    }
+
+    .message {
+        margin: 1rem 3rem 1rem 1rem;
+    }
+
+    #send {
+        margin-right: 4rem;
+    }
+}
