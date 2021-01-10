@@ -15,7 +15,7 @@ const logOut = function () {
                 localStorage.removeItem('lastTimeStamp');
                 localStorage.removeItem('remainingTime');
 
-                window.location.pathname = "../index.html"
+                window.location.href = "../index.html"
 
             }
         })
