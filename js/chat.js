@@ -115,7 +115,7 @@
         if (storedKwickToken == null) {
             new Popup(() => {
                 window.location.href = "../index.html";
-            }, "You must to register to acces the tchat room!", false)
+            }, "You must to register to acces the chat room!", false)
         }
         if (storedKwickToken != null) {
             fetchAndDisplayUsersAndMessages(localStorage.getItem('kwickToken'), 0);
