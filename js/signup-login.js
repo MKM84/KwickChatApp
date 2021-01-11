@@ -85,7 +85,7 @@
       });
   }
 
-  // On sign up or login => send request to register,  save token then go to the tchat room
+  // On sign up or login => send request to register,  save token then go to the chat room
   function onSignUpOrLogin(form, userName, password) {
       form.on('submit', (e) => {
           e.preventDefault();
@@ -98,9 +98,9 @@
           if(connectedUser != null) {   
             new Popup ( () => { 
                 if(form == $formSignUp) {
-                    window.location.href = "pages/tchat.html";
+                    window.location.href = "pages/chat.html";
                     } else {
-                      window.location.href = "tchat.html";
+                      window.location.href = "chat.html";
                     }
             }, `You are allready connected as ${connectedUser}!! You must logout to be able to connect again.`, false)
             return;
@@ -109,9 +109,9 @@
           register(form, userName, password)
               .then(() => {
                   if(form == $formSignUp) {
-                  window.location.href = "pages/tchat.html";
+                  window.location.href = "pages/chat.html";
                   } else {
-                    window.location.href = "tchat.html";
+                    window.location.href = "chat.html";
                   }
               })
             
