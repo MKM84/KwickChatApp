@@ -1,6 +1,3 @@
-# Kwick - Study project
-Tchat application made with HTML, CSS and JS.
-
 ## API link
 http://greenvelvet.alwaysdata.net/kwick/doc/api.html
 
