@@ -6,7 +6,7 @@
 * @this {Popup}
 * @param {function} callbackA The function to be excuted on instaciation.
 * @param {text} msgTxt The popup text.
-* @param {HtmlElement} btnCancel another button to cancel the excution of the function .
+* @param {HtmlElement} btnCancel another button to cancel.
 */
 
 class Popup {
