@@ -48,7 +48,8 @@ main.sign-up-main {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    height: 2.3rem;
+    height: 36px;
+    border-radius: 0px;
 }
 
 .sign-up .input-con:focus {
@@ -67,7 +68,8 @@ main.sign-up-main {
     color: var(--white);
     font-weight: 700;
     cursor: pointer;
-    height: 2.2rem;
+    height: 37px;
+    border-radius: 0px;
 }
 
 .sign-up .btn-con:focus {
