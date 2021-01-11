@@ -64,7 +64,7 @@ main.sign-up-main {
 }
 
 .sign-up .btn-con {
-    background-color: var(--blue-1) !important;
+    background-color: var(--blue-1);
     color: var(--white);
     font-weight: 700;
     cursor: pointer;
