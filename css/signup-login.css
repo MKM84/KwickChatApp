@@ -70,6 +70,7 @@ main.sign-up-main {
     cursor: pointer;
     height: 37px !important;
     border-radius: 0px !important;
+    -webkit-appearance: none;
 }
 
 .sign-up .btn-con:focus {
