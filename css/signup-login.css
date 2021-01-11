@@ -68,8 +68,8 @@ main.sign-up-main {
     color: var(--white);
     font-weight: 700;
     cursor: pointer;
-    height: 37px;
-    border-radius: 0px;
+    height: 37px !important;
+    border-radius: 0px !important;
 }
 
 .sign-up .btn-con:focus {
