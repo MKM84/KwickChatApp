@@ -1,5 +1,3 @@
-## API link
-http://greenvelvet.alwaysdata.net/kwick/doc/api.html
 
 ## Available Scripts
 In the project directory, you can run:
